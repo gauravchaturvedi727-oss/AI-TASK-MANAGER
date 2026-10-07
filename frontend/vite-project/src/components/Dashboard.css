@@ -1,0 +1,106 @@
+
+.dashboard {
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+.dashboard-header {
+    width: min(1100px, 92%);
+
+    margin: 0 auto;
+
+    padding: 55px 0 15px;
+
+    text-align: center;
+}
+
+
+/* Small brand */
+
+.brand-badge {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 7px 13px;
+
+    margin-bottom: 18px;
+
+    border-radius: 999px;
+
+    background: rgba(99, 102, 241, 0.1);
+
+    border: 1px solid rgba(129, 140, 248, 0.18);
+
+    color: #a5b4fc;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.3px;
+}
+
+
+/* Main heading */
+
+.dashboard-header h1 {
+    margin: 0;
+
+    font-size: clamp(2.2rem, 5vw, 3.7rem);
+
+    font-weight: 800;
+
+    letter-spacing: -2px;
+
+    line-height: 1.1;
+
+    background:
+        linear-gradient(
+            100deg,
+            #ffffff,
+            #c7d2fe,
+            #a78bfa
+        );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dashboard-header p {
+    max-width: 600px;
+
+    margin: 18px auto 0;
+
+    color: #94a3b8;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+.dashboard-content {
+    width: 100%;
+}
+
+
+@media (max-width: 600px) {
+
+    .dashboard-header {
+        width: 92%;
+
+        padding-top: 35px;
+    }
+
+    .dashboard-header h1 {
+        font-size: 2.2rem;
+
+        letter-spacing: -1px;
+    }
+
+    .dashboard-header p {
+        font-size: 14px;
+    }
+}

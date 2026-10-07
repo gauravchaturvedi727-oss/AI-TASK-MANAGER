@@ -1,0 +1,17 @@
+LifeOS AI is a personal productivity assistant.
+
+Users can create tasks with a title and description.
+
+Users can mark tasks as completed.
+
+LifeOS AI can help users organize their daily tasks and notes.
+
+RAG stands for Retrieval Augmented Generation.
+
+RAG retrieves relevant information from a knowledge base before asking an LLM to generate an answer.
+
+Embeddings represent text as numerical vectors.
+
+FAISS is used to search vectors efficiently and find information that is semantically similar to a user's question.
+
+Qwen is the language model used by LifeOS AI to generate answers.

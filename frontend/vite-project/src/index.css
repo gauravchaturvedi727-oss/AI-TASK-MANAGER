@@ -1,0 +1,201 @@
+/* =========================================
+   LIFEOS AI — GLOBAL CSS
+========================================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+
+    font-family: "Inter", -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 10% 0%,
+            rgba(99, 102, 241, 0.14),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 90% 10%,
+            rgba(139, 92, 246, 0.12),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 50% 100%,
+            rgba(6, 182, 212, 0.07),
+            transparent 35%
+        ),
+        #070b14;
+
+    color: #f8fafc;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================================
+   ROOT
+========================================= */
+
+#root {
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   COMMON ELEMENTS
+========================================= */
+
+button,
+input,
+textarea {
+    font-family: inherit;
+}
+
+
+button {
+    cursor: pointer;
+}
+
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #070b14;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #252d42;
+
+    border-radius: 20px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3b4660;
+}
+
+
+/* =========================================
+   TEXT SELECTION
+========================================= */
+
+::selection {
+    background: rgba(99, 102, 241, 0.35);
+
+    color: white;
+}
+
+
+/* =========================================
+   AI CHAT TEXT
+========================================= */
+
+/*
+   AIChat has a light card background,
+   therefore its text should be dark.
+*/
+
+.ai-chat {
+    color: #111827;
+}
+
+
+/* AI heading */
+
+.ai-chat h2 {
+    color: #111827;
+}
+
+
+/* AI input */
+
+.ai-chat input {
+    color: #111827;
+}
+
+
+.ai-chat input::placeholder {
+    color: #64748b;
+}
+
+
+/* AI answer */
+
+.ai-answer {
+    color: #111827;
+}
+
+
+.ai-answer h3 {
+    color: #111827 !important;
+}
+
+
+.ai-answer p {
+    color: #334155 !important;
+}
+
+
+/* AI loading */
+
+.ai-loading {
+    color: #4f46e5 !important;
+}
+
+
+/* AI error */
+
+.ai-error {
+    color: #b91c1c !important;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    body {
+        background:
+            radial-gradient(
+                circle at 50% 0%,
+                rgba(99, 102, 241, 0.12),
+                transparent 35%
+            ),
+            #070b14;
+    }
+}
